@@ -1,16 +1,80 @@
-# React + Vite
+# Sweety Glucose Tracker – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The frontend application for Sweety Glucose Tracker, built using React.js and Vite. It provides a user-friendly interface for managing daily blood glucose readings and viewing reports.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js
+- JavaScript
+- Axios
+- React Router DOM
+- CSS
+- Vite
+- Lucide React
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User registration
+- User login
+- Dashboard overview
+- View glucose readings
+- Add new glucose readings
+- Edit existing readings
+- Delete readings
+- Daily glucose reports
+- Month-to-date reports
+- Monthly reports
+- API integration using Axios
+- JWT token-based authentication
 
-## Expanding the Oxlint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 1. Navigate to the frontend folder
+
+```bash
+cd client
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## Backend Integration
+
+The frontend communicates with the Node.js and Express backend through REST APIs.
+
+Backend API base URL:
+
+`http://localhost:5000/api`
+
+Axios is configured to attach the JWT authentication token to protected API requests.
+
+## Related Project
+
+Backend and complete project documentation:
+
+https://github.com/vignesh060/sweety-glucose-tracker
+
+## Author
+
+**Vignesh Jagadeesan**
+
+GitHub: https://github.com/vignesh060
